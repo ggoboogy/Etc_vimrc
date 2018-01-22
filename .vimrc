@@ -8,6 +8,11 @@ set viminfo='20,<1000
 filetype plugin indent on
 set hlsearch
 set number
-set ts=4
-set shiftwidth=4
+set textwidth=80
+set ts=2
+set shiftwidth=2
 set expandtab
+
+autocmd FileType python setlocal softtabstop=2
+autocmd FileType python setlocal shiftwidth=2
+autocmd FileType python setlocal textwidth=80
