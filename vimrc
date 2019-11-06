@@ -5,6 +5,14 @@ endif
 
 set viminfo='20,<1000
 
+call plug#begin()
+Plug 'dense-analysis/ale'
+call plug#end()
+
+let g:ale_linters = {
+      \'python': ['flake8', 'mypy']
+      \}
+
 filetype plugin indent on
 set encoding=utf8
 set incsearch     " incremental search
