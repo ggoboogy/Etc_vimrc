@@ -3,6 +3,7 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
+set bg=dark
 set viminfo='20,<1000
 
 call plug#begin()
@@ -31,6 +32,11 @@ set ffs=unix,dos
 autocmd FileType python setlocal softtabstop=4
 autocmd FileType python setlocal shiftwidth=4
 autocmd FileType python setlocal textwidth=80
+
+" java mode
+autocmd FileType java setlocal softtabstop=2
+autocmd FileType java setlocal shiftwidth=2
+autocmd FileType java setlocal textwidth=100
 
 " javascript mode
 autocmd FileType javascript setlocal softtabstop=2
