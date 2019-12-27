@@ -19,6 +19,7 @@ set encoding=utf8
 set incsearch     " incremental search
 set hlsearch      " highlight search items
 set number        " use line no
+set ruler         " use cursor position
 set textwidth=80  " character limit in one line
 set shiftwidth=2  " shift space width
 set ts=2          " tab space width
