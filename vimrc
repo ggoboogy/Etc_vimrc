@@ -8,6 +8,7 @@ set viminfo='20,<1000
 
 call plug#begin()
 Plug 'dense-analysis/ale'
+Plug 'vim-scripts/taglist.vim'
 call plug#end()
 
 let g:ale_linters = {
