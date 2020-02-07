@@ -13,7 +13,7 @@ fi
 
 # install diff-so-fancy
 if [[ "$OSTYPE" == "darwin"* ]]; then
-  brew install diff-so-fancy
+  brew install diff-so-fancy ack gotags
 fi
 
 # install vim-plug
