@@ -36,16 +36,31 @@ highlight GitGutterAdd ctermfg=34 guifg=34 ctermbg=34 guibg=34
 highlight GitGutterChange ctermfg=124 guifg=124 ctermbg=124 guibg=124
 highlight GitGutterDelete ctermfg=124 guifg=124 ctermbg=124 guibg=124
 
+" fzf custom setup
+let g:fzf_action = { 'enter': 'tab split' }
+
 " map shortcut or alias into command
-nnoremap <C-h> <C-w><left>
-nnoremap <C-j> <C-w><down>
-nnoremap <C-k> <C-w><up>
-nnoremap <C-l> <C-w><right>
-nnoremap <S-l> gt
-nnoremap <S-h> gT
+nnoremap <S-h> <C-w><left>
+nnoremap <S-j> <C-w><down>
+nnoremap <S-k> <C-w><up>
+nnoremap <S-l> <C-w><right>
 nnoremap <C-t> :TagbarToggle<CR>
-nnoremap ff :FZF<CR>
+nnoremap <CR> :FZF<CR>
 nmap <C-g> <Plug>(GitGutterPreviewHunk)
+
+" Tab navigation
+nnoremap <C-p> gt
+nnoremap <C-n> gT
+nnoremap 1 :tabn 1<CR>
+nnoremap <A-1> :tabn 1<CR>
+nnoremap 2 :tabn 2<CR>
+nnoremap <A-2> :tabn 2<CR>
+nnoremap 3 :tabn 3<CR>
+nnoremap <A-3> :tabn 3<CR>
+nnoremap 4 :tabn 4<CR>
+nnoremap <A-4> :tabn 4<CR>
+nnoremap 5 :tabn 5<CR>
+nnoremap <A-5> :tabn 5<CR>
 
 " basic setup
 if has("autocmd")
